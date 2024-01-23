@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Super Mario</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;700&family=Roboto&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body>
+
+    <div class="video-mario">
+        <video source src="video.mp4" autoplay muted loop></video>
+        <div class="mascara-video"></div>
+
+    </div>
+
+    <div class="caixa-principal">
+        <img src="logo.png" class="logo-mario">
+        <p>Encanadores Mario & Luigi - Resolvendo seus problemas Com Estilo</p>
+        <p>Você ja se encontrou em uma situação de emergência com encanamento ? Apresentamos a você os encanadores mais
+            famosos do Reino do Cogumelo - Mario & Luigi</p>
+
+        <button onclick="cliqueiNoBotao">fale com nosco</button>
+    </div>
+
+    <img src="mario.png" class="imagem-mario-luigi">
+
+    <form class="fale-conosco">
+        <input placeholder="seu nome" type="text">
+        <imput placeholder="seu telefone" type="tel"></imput>
+        <textarea placeholder="digite aqui seu problema"></textarea>
+        <button>enviar formulário</button>
+
+    </form>
+</body>
+
+<script>
+
+let formulário = document.querySelector(".fale-conosco")
+
+
+    function cliqueiNoBotao(){
+        formulario.style.left = "700px"
+        
+    }
+
+function sumirFormulario(){
+    formulario.style.left = "-320px"
+}
+</script>
+
+</html>
