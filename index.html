@@ -36,18 +36,20 @@
         <input placeholder="seu nome" type="text">
         <input placeholder="seu telefone" type="tel">
         <textarea placeholder="digite aqui seu problema"></textarea>
-        <button>enviar formulário</button>
+        <button onclick="sumirFormulario()">enviar formulário</button>
 
     </form>
+    <div>"mascara-form"></div>
 </body>
 
 <script>
 
 let formulário = document.querySelector(".fale-conosco")
-
+let mascara=document.querySelector(".mascara-form")
 
     function cliqueiNoBotao(){
         formulario.style.left = "700px"
+        mascara.style.visibilit = "visible"
         
     }
 
