@@ -79,6 +79,7 @@ button {
     position: fixed;
     left: -320px;
     transition: left 1s linear;
+    z-index: 4;
 
 
 }
@@ -100,5 +101,14 @@ textarea {
     padding: 10px;
     outline-color: chartreuse;
 
+
+}
+.mascara-form {
+    visibility: hidden;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    z-index:3;
 
 }
